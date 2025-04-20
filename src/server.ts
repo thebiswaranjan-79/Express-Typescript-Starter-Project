@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/api/v1/ping", v1Router);
+app.use("/api/v1", v1Router);
 
 app.listen(serverConfig.PORT, () => {
   console.log(`Server is running on http://localhost:${serverConfig.PORT}`);
